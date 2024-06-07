@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <meta name="description" content=" This page is about Haider`s Portfolio Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/9ee3873b5b.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="header-logo">HAIDER'S PORTFOLIO</a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-styling">My Projects</a></li>
+        <li><a href="contact.html" class="nav-styling">Contact</a></li>
+        <li><a href="aboutme.html" class="nav-styling">About</a></li>
+      </ul>
+    </nav>
+    <main class="form-container">
+      <h1 class="h1-contact-us">Contact us</h1>
+      <form id="contactForm" class="contactform">
+        <div>
+          <label>
+            Name (required)
+            <input name="name" id="name" />
+          </label>
+          <div class="error" id="NameError">Please enter your first name</div>
+        </div>
+
+        <div>
+          <label>
+            Email
+            <input name="email" id="email" />
+          </label>
+          <div class="error" id="emailError">Please enter a valid email address</div>
+        </div>
+
+        <div>
+          <label>
+            Message (minimum 20 characters)
+            <input name="message" id="message" class="message" />
+          </label>
+          <div class="error" id="messageError">Your message must at least contain 20 characters</div>
+        </div>
+        <div class="button-style">
+          <button type="submit">Submit</button>
+        </div>
+        <div id="successMessage" style="display:none; color: green;">Your message has been sent.</div>
+      </form>
+    </main>
+    <script src="js/contact.js"></script>
+    <footer>
+      <div class="footer-text">Haider`s Portfolio 2024 | All rights reserved.</div>
+      <div class="footer-text">Terms of Service | Privacy Policy</div>
+    </footer>
+  </body>
+</html>
